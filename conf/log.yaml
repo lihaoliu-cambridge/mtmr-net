@@ -1,0 +1,40 @@
+version: 1.0
+
+formatters:
+  classic_formatter:
+    format: '%(asctime)s %(filename)s[line:%(lineno)d] [%(levelname)s] %(message)s'
+    datefmt: '%a, %d %b, %Y, %H:%M:%S'
+
+handlers:
+  console_handler:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: classic_formatter
+    stream: ext://sys.stdout
+
+  file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: classic_formatter
+    when: D
+    interval: 1
+    backupCount: 20
+    filename: './logs/error_logs'
+
+  email_handler:
+    class: logging.handlers.SMTPHandler
+    level: ERROR
+    formatter: classic_formatter
+    mailhost: smtp.cse.cuhk.edu.hk
+    fromaddr: lhliu@cse.cuhk.edu.hk
+    toaddrs: [lhliu1994@gmail.com]
+    subject: 'Code_Error_Info'
+    credentials: !!python/tuple ['lhliu@cse.cuhk.edu.hk', '@Will2017Iam']
+
+root:
+  level: DEBUG
+  handlers:
+    - console_handler
+    - file_handler
+    # - email_handler
+  propagate: 0

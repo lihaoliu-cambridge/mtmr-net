@@ -1,0 +1,105 @@
+is_training: True
+
+middle_result_log_dir_params:
+    tensorboard_dir: "./logs/middle_result_logs/benign/ranking_resnet_for_overall/log4tb"
+    model_dir: "./logs/middle_result_logs/benign/ranking_resnet_for_overall/log4model"
+    note_dir: "./logs/middle_result_logs/benign/ranking_resnet_for_overall/note"
+    self_increasing_mode: False
+    pattern: "ranking_resnet"
+    default_pattern: "test"
+
+model_params:
+    model_name: "ranking_resnet_50_regression"
+
+    image_size_x:  224
+    image_size_y:  224
+    image_size_z:  224
+    classes_num: 2
+
+training_params:
+    # ~~~~~~~~~~step 0: for cross validation folder~~~~~~~~~~
+    k_folder: 5
+    is_cross_validation: True
+
+    # ~~~~~~~~~~step 1: for getting dataloader~~~~~~~~~~
+    multi_thread_data_dir: "./data/LIDC-IDRI/preprocessed_data_for_pytorch/benign_2d/new_OA_256x256x256_2D_2"
+    data_pattern: "*.jpg"
+    annotation_file_path: "./data/LIDC-IDRI/CSVFILES/train.csv"
+    hard_example_mining_file_path:
+    repeat_times: 2
+    batch_size: 64
+    thread_num: 4
+    classes_num: 2
+
+    # ~~~~~~~~~~step 2(1): for configuring model~~~~~~~~~~
+    pretrained_model_path: [
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth"
+    ]
+    another_pretrained_model_path: [
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth",
+    "./logs/middle_result_logs/imagenet/resnet50-19c8e357.pth"
+    ]
+    unnecessary_keys: [[], [], [], [], []]
+    special_model_load_method: 2
+
+    # ~~~~~~~~~~step 2(2): for configuring gpu~~~~~~~~~~
+    gpu_num: 1
+    gpu_device_num: [0]
+
+    # ~~~~~~~~~~step 3: for criterion and optimizer~~~~~~~~~~
+    loss_function_name: "nn.MSELoss()"
+    weight_decay: 1e-4
+
+    optimizer_name: "optim.Adam"
+    momentum: # 0.99
+    different_learning_rate: True
+    learning_rate: 0.003
+    learning_rate_decay: 0.1
+    learning_rate_decay_step: 25
+    feature_part_decay_rate: 0.01
+
+    # ~~~~~~~~~~step 4: other training info~~~~~~~~~~
+    max_epoch: 50
+    standard_accuracy: 0.80
+    save_name: "supplementary_1_loss_class_loss_rangking"
+    save_frequency: 50
+    print_freq: 1
+
+    # ~~~~~~~~~~output info~~~~~~~~~~
+    output_data_path: "./data/output_data"
+    result_file: "result.txt"
+    retrain_sample_file: "hard_example/{}.csv"
+    all_sample_file: "all_example/{}.csv"
+
+testing_params:
+    k_folder: 5
+    unnecessary_keys: []
+    special_model_load_method: 0
+
+    flag_training_dataset: True
+    flag_testing_dataset: True
+
+    multi_thread_data_dir: "./data/LIDC-IDRI/preprocessed_data_for_pytorch/benign_2d/new_OA_256x256x256_2D_2"
+    data_pattern: "*.jpg"
+    annotation_file_path: "./data/LIDC-IDRI/CSVFILES/test.csv"
+    thread_num: 4
+    classes_num: 2
+
+    max_epoch: 1
+    batch_size: 1
+    gpu_num: 1
+    gpu_device_num: [0]
+
+    print_freq: 1
+
+    output_data_path: "./data/output_data"
+    result_file: "result.txt"
+    retrain_sample_file: "hard_example/{}.csv"
+    all_sample_file: "all_example/{}.csv"
