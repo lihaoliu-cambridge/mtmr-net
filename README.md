@@ -10,7 +10,7 @@ Code for 《MTMR-net: Multi-Task Deep Learning with Margin Ranking Loss for Lung
 
 ## Introduction
 
-This is the pytorch implementation for 《MTMR-net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis Project》.(Paper Coming Soon)
+This is the pytorch implementation for 《MTMR-net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis Project》**(Paper Coming Soon)**.
 
 We can output a more robust benign-malignant classification result with persuasive semantic feature scores compared to other CAD techniques which can only output classification results, as shown in the figures.
   ![image](https://github.com/CaptainWilliam/MTMR-net/blob/master/data/github_image/fig_1.png)
@@ -31,15 +31,16 @@ Download resnet50 model into "./logs/middle_result_logs/imagenet/" folder from p
 
 1.Original Dataset:
 
-LIDC-IDRI dataset can be found in the official website: 
-https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI
+Original LIDC-IDRI dataset can be found in the official website: 
+<br>https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI
 
-The processing method can be found in this 2 links: 
+The preprocessing methods can be found in below 2 links: 
 <br>https://github.com/zhwhong/lidc_nodule_detection
 <br>https://github.com/jcausey-astate/NoduleX_code
 
 
 2.Preprocessed Data:
+
 Find the preprocessed data(2d slices) which can be used directly in the code from Installation section.
 
 
