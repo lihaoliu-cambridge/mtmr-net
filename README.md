@@ -47,7 +47,7 @@ Find the preprocessed data(2d slices) which can be used directly in the code fro
 
 ## Todos
 
- - Modify the [args.yaml](https://github.com/CaptainWilliam/Colorization/blob/master/conf/args.yaml), add the parameters your deep learning model need under the "running_params" item. Details are shown in another project: https://github.com/CaptainWilliam/Deep-Learning-Model-Saving-Helper
+ - Modify the [args.yaml](https://github.com/CaptainWilliam/MTMR-net/blob/master/conf/args.yaml), add the parameters your deep learning model need under the "running_params" item. Details are shown in another project: https://github.com/CaptainWilliam/Deep-Learning-Model-Saving-Helper
  - Pass the running_params (a python dict which contains the running parameters) to you own model.
  - The first parameter "is_training" is True for training mode, "is_training" is False for test mode.
  - Finish you mode(training or test), and run it.
