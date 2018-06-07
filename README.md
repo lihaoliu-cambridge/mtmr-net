@@ -1,4 +1,4 @@
-# MTMR-net
+# MTMR-Net
 Code for 《MTMR-Net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis》 Project.
 
 ****
