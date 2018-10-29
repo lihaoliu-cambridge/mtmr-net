@@ -10,7 +10,7 @@ Code for 《MTMR-Net: Multi-Task Deep Learning with Margin Ranking Loss for Lung
 
 ## Introduction
 
-This is the pytorch implementation for 《MTMR-Net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis》**
+This is the pytorch implementation for 《MTMR-Net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis》
 
 Paper can be found in https://www.researchgate.net/publication/327748707_MTMR-Net_Multi-task_Deep_Learning_with_Margin_Ranking_Loss_for_Lung_Nodule_Analysis_4th_International_Workshop_DLMIA_2018_and_8th_International_Workshop_ML-CDS_2018_Held_in_Conjunction_with_MICCAI_201**.
 
