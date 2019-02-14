@@ -1,5 +1,5 @@
 # MTMR-Net
-Code for 《MTMR-Net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis》 Project.
+Code for 《Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis》 Project.
 
 ****
 |Author|LIU Lihao|
