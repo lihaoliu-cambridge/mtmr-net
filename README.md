@@ -18,8 +18,11 @@ We can output a more robust benign-malignant classification result with persuasi
 ## Requirement
 
 Python 2.7
+
 PyTorch >= 0.3.0
-torchvision
+
+tensorboardX >= 0.9
+
 numpy
 
 ## Installation
