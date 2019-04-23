@@ -15,6 +15,13 @@ This is the pytorch implementation for 《MTMR-Net: Multi-Task Deep Learning wit
 We can output a more robust benign-malignant classification result with persuasive semantic feature scores compared to other CAD techniques which can only output classification results, as shown in the figures.
   ![image](https://github.com/CaptainWilliam/MTMR-net/blob/master/data/github_image/fig_1.png)
 
+## Requirement
+
+Python 2.7
+PyTorch >= 0.3.0
+torchvision
+numpy
+
 ## Installation
 
 pytorch: http://pytorch.org/
