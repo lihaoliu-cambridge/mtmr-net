@@ -17,13 +17,13 @@ We can output a more robust benign-malignant classification result with persuasi
 
 ## Requirement
 
-Python 2.7
+Python 2.7.13
 
-PyTorch >= 0.3.0
+PyTorch == 0.3.0
 
-tensorboardX >= 0.9
+tensorboardX == 0.9
 
-numpy
+numpy == 1.14.3
 
 ## Installation
 
