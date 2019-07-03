@@ -33,26 +33,19 @@ tensorboardX: https://github.com/lanpa/tensorboard-pytorch
 
 Download and unzip this project: MTMR-net-master.zip.
 
-Download and unzip preprocessed data into "./data/" folder：<br>https://drive.google.com/open?id=1xFRQBzuQLv4fO5ecsyKnPc5u2D2N9e76
 
 Download resnet50 model into "./logs/middle_result_logs/imagenet/" folder from pytorch website:<br>https://download.pytorch.org/models/resnet50-19c8e357.pth
 
-## Dataset:
-
-1.Original Dataset:
+## Dataset
 
 Original LIDC-IDRI dataset can be found in the official website: 
 <br>https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI
 
+Download and data into "./data/" folder.
+
 The preprocessing methods can be found in below 2 links: 
 <br>https://github.com/zhwhong/lidc_nodule_detection
 <br>https://github.com/jcausey-astate/NoduleX_code
-
-
-2.Preprocessed Data:
-
-Find the preprocessed data(2d slices) which can be used directly in the code from Installation section.
-
 
 
 ## Todos
