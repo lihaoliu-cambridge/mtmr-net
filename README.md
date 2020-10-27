@@ -10,8 +10,6 @@ Code for 《Multi-Task Deep Model with Margin Ranking Loss for Lung Nodule Analy
 
 ## Introduction
 
-This is the pytorch implementation for 《MTMR-Net: Multi-Task Deep Learning with Margin Ranking Loss for Lung Nodule Analysis》
-
 We can output a more robust benign-malignant classification result with persuasive semantic feature scores compared to other CAD techniques which can only output classification results, as shown in the figures.
   ![image](https://github.com/CaptainWilliam/MTMR-net/blob/master/data/github_image/fig_1.png)
 
