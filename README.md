@@ -2,7 +2,7 @@
 Code for 《Multi-Task Deep Model with Margin Ranking Loss for Lung Nodule Analysis》 Project.
 
 ****
-|Author|LIU Lihao|
+|Author|Lihao LIU|
 |---|---
 |E-mail|lhliu1994@gmail.com
 ****
