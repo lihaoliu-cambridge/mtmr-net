@@ -45,8 +45,8 @@ https://github.com/jcausey-astate/NoduleX_code
  - Finish you mode(training or test), and run it.  
  
    ```shell
-   $ cd mtmr-net
-   $ python main.py
+   cd mtmr-net
+   python main.py
    ```  
    
    
