@@ -1,50 +1,40 @@
 # MTMR-Net
-Code for "Multi-Task Deep Model with Margin Ranking Loss for Lung Nodule Analysis" on IEEE Transactions on Medical Imaging (TMI).
-
-
-****
-|Author|Lihao LIU|
-|---|---
-|E-mail|lhliu1994@gmail.com
-****
+Code for [Multi-Task Deep Model with Margin Ranking Loss for Lung Nodule Analysis](https://ieeexplore.ieee.org/document/8794587) on IEEE Transactions on Medical Imaging (TMI).
 
 
 ## Introduction
 
-We can output a more robust benign-malignant classification result with persuasive semantic feature scores compared to other CAD techniques which can only output classification results, as shown in the figures.
+This repository provides the PyTorch implementation for our TMI paper [Multi-Task Deep Model with Margin Ranking Loss for Lung Nodule Analysis](https://ieeexplore.ieee.org/document/8794587). Our model can output a more robust benign-malignant classification result with persuasive semantic feature scores compared to other CAD techniques which can only output classification results.
   ![image](https://github.com/CaptainWilliam/MTMR-net/blob/master/data/github_image/fig_1.png)
+
 
 ## Requirement
 
-Python 2.7.13
-
-PyTorch == 0.3.0
-
-tensorboardX == 0.9
-
+Python == 2.7.13  
+PyTorch == 0.3.0  
+tensorboardX == 0.9  
 numpy == 1.14.3
+
 
 ## Installation
 
-pytorch: http://pytorch.org/
+Download and unzip this project: 
 
-tensorboardX: https://github.com/lanpa/tensorboard-pytorch
+   ```shell
+   git clone https://github.com/lihaoliu-cambridge/mtmr-net.git
+   cd mtmr-net
+   ```
+   
+Download [resnet50.pth](https://download.pytorch.org/models/resnet50-19c8e357.pth) into `./logs/middle_result_logs/imagenet/` folder.
 
-Download and unzip this project: MTMR-net-master.zip.
-
-
-Download resnet50 model into "./logs/middle_result_logs/imagenet/" folder from pytorch website:<br>https://download.pytorch.org/models/resnet50-19c8e357.pth
 
 ## Dataset
 
-Original LIDC-IDRI dataset can be found in the official website: 
-<br>https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI
+Download and [original LIDC-IDRI dataset](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI) into `./data/` folder
 
-Download and data into "./data/" folder.
-
-The preprocessing methods can be found in below 2 links: 
-<br>https://github.com/zhwhong/lidc_nodule_detection
-<br>https://github.com/jcausey-astate/NoduleX_code
+The preprocessing methods can be found in below two links:  
+https://github.com/zhwhong/lidc_nodule_detection  
+https://github.com/jcausey-astate/NoduleX_code
 
 
 ## Todos
@@ -54,10 +44,10 @@ The preprocessing methods can be found in below 2 links:
  - The first parameter "is_training" is True for training mode, "is_training" is False for test mode.
  - Finish you mode(training or test), and run it.
  
-```sh
-$ cd MTMR-NET-master
-$ python main.py
-```
+   ```shell
+   $ cd mtmr-net
+   $ python main.py
+   ```
 
 ## Acknowledgement
 
