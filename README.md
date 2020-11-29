@@ -69,7 +69,7 @@ If you use our code for your research, please cite our paper:
 
 ## Question
 
-Please open an issue or email lhliu1994@gmail.com for any question.
+Please open an issue or email lhliu1994@gmail.com for any questions.
 
 
 ## Acknowledgement
