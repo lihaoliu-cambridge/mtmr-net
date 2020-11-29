@@ -1,0 +1,1 @@
+## Download and unzip the LIDC-IDRI dataset in this folder.
